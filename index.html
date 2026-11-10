@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet three wonderful dog breeds and learn the basics of their everyday care at the Virtual Dog Park.">
+  <title>Virtual Dog Park | A friendly breed guide</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Virtual Dog Park home">
+      <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+        <ellipse cx="12" cy="12" rx="4" ry="5" transform="rotate(-25 12 12)" />
+        <ellipse cx="23" cy="9" rx="4" ry="5" transform="rotate(10 23 9)" />
+        <ellipse cx="31" cy="18" rx="4" ry="5" transform="rotate(30 31 18)" />
+        <ellipse cx="6" cy="23" rx="4" ry="5" transform="rotate(-25 6 23)" />
+        <path d="M13 25c3-8 10-10 14-2 6 11-1 14-7 11-7 4-13-1-7-9Z" />
+      </svg>
+      <span>Virtual Dog Park</span>
+    </a>
+    <a class="nav-link" href="#encyclopedia">Meet the breeds <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="main-content">
+    <section class="welcome" aria-labelledby="welcome-title">
+      <div class="welcome-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> A little learning. A lot of tail wagging.</p>
+        <h1 id="welcome-title">Welcome to the<br><span>Virtual Dog Park.</span></h1>
+        <p class="intro">Every dog has a story. Get to know three lovable breeds, discover their personalities, and learn what keeps them happy.</p>
+        <a class="primary-link" href="#encyclopedia">Explore the encyclopedia <span aria-hidden="true">↓</span></a>
+      </div>
+
+      <aside class="care-note" aria-labelledby="care-title">
+        <span class="note-decoration" aria-hidden="true">✳</span>
+        <p class="eyebrow">Little things, happy dogs</p>
+        <h2 id="care-title">A little care<br>goes a long way.</h2>
+        <p id="care-tip" class="tip-text" aria-live="polite" aria-atomic="true">Make time for a daily walk. Let your dog pause and explore new smells along the way.</p>
+        <button id="care-tip-button" class="tip-button" type="button">Another care tip <span aria-hidden="true">↻</span></button>
+      </aside>
+    </section>
+
+    <section class="encyclopedia" id="encyclopedia" aria-labelledby="encyclopedia-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Find a familiar face</p>
+          <h2 id="encyclopedia-title">Dog Encyclopedia</h2>
+        </div>
+        <p>Three breeds. Three big personalities.</p>
+      </div>
+
+      <div class="breed-grid">
+        <article class="breed-card" aria-labelledby="beagle-title">
+          <div class="breed-portrait beagle-portrait">
+            <span class="breed-number" aria-hidden="true">01</span>
+            <img src="assets/beagle.svg" alt="Illustration of a Beagle with brown floppy ears and a white chest." width="480" height="360">
+            <span class="personality-tag">The curious explorer</span>
+          </div>
+          <div class="breed-info">
+            <h3 id="beagle-title">Beagle</h3>
+            <p class="breed-summary">A friendly nose for adventure.</p>
+            <dl>
+              <div><dt>Size</dt><dd>Small to medium</dd></div>
+              <div><dt>Personality</dt><dd>Curious, cheerful, and sociable.</dd></div>
+              <div><dt>Everyday care</dt><dd>Enjoy daily walks and scent games. Brush the short coat weekly.</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="breed-card" aria-labelledby="golden-title">
+          <div class="breed-portrait golden-portrait">
+            <span class="breed-number" aria-hidden="true">02</span>
+            <img src="assets/golden-retriever.svg" alt="Illustration of a Golden Retriever with a fluffy golden coat and a waving tail." width="480" height="360">
+            <span class="personality-tag">The sunny best friend</span>
+          </div>
+          <div class="breed-info">
+            <h3 id="golden-title">Golden Retriever</h3>
+            <p class="breed-summary">A big heart and a happy tail.</p>
+            <dl>
+              <div><dt>Size</dt><dd>Large</dd></div>
+              <div><dt>Personality</dt><dd>Gentle, friendly, and eager to learn.</dd></div>
+              <div><dt>Everyday care</dt><dd>Make time for daily walks and play. Brush the thick coat often.</dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article class="breed-card" aria-labelledby="poodle-title">
+          <div class="breed-portrait poodle-portrait">
+            <span class="breed-number" aria-hidden="true">03</span>
+            <img src="assets/poodle.svg" alt="Illustration of a Poodle with a curly cream coat and a pom-pom tail." width="480" height="360">
+            <span class="personality-tag">The clever companion</span>
+          </div>
+          <div class="breed-info">
+            <h3 id="poodle-title">Poodle</h3>
+            <p class="breed-summary">Bright ideas beneath those curls.</p>
+            <dl>
+              <div><dt>Size</dt><dd>Varies: toy, miniature, or standard</dd></div>
+              <div><dt>Personality</dt><dd>Intelligent, active, and quick to learn.</dd></div>
+              <div><dt>Everyday care</dt><dd>Offer daily exercise and learning games. Brush the curls and arrange regular grooming.</dd></div>
+            </dl>
+          </div>
+        </article>
+      </div>
+      <p class="guide-note">Every dog is an individual. These notes are a friendly starting point for getting to know each breed.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Virtual Dog Park</span>
+    <p>Made for curious minds and wagging tails.</p>
+    <a href="#welcome-title">Back to top <span aria-hidden="true">↑</span></a>
+  </footer>
+</body>
+</html>

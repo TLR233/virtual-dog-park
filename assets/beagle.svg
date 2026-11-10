@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="title desc">
+  <title id="title">Beagle illustration</title>
+  <desc id="desc">A seated brown, black, and white Beagle with long floppy ears and a green collar.</desc>
+  <ellipse cx="200" cy="272" rx="101" ry="12" fill="#284b3f" opacity=".1"/>
+  <g stroke="#665346" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- A wagging tail, with the Beagle's characteristic white tip. -->
+    <path d="M250 229c35 1 53-17 49-48-2-12-12-17-17-10-4 7 1 15-3 24-5 13-17 17-32 17" fill="#bd8050"/>
+    <path d="M299 185c0-15-9-22-16-15-3 4-3 9-2 15" fill="#fff9ed"/>
+    <!-- Body and dark saddle. -->
+    <path d="M158 166c-23 26-29 59-22 82 4 12 16 17 34 17h66c19 0 29-11 28-27-2-29-15-55-29-72z" fill="#bd8050"/>
+    <path d="M165 166c-15 20-20 38-19 55 13 10 29 12 40 5l28-56z" fill="#403d39"/>
+    <path d="M183 163c-8 19-10 42-9 67l-6 29h63l-9-30c4-22-1-46-9-65" fill="#fff9ed"/>
+    <path d="M174 218l-4 40m51-40 5 40" fill="none"/>
+    <path d="M171 250c-18-2-28 3-28 11 0 6 10 8 26 8h20c5-7 3-14-2-17z" fill="#fff9ed"/>
+    <path d="M222 251c17-3 28 1 30 10 0 6-10 8-26 8h-20c-5-7-3-14 2-17z" fill="#fff9ed"/>
+    <!-- Long floppy ears and broad face. -->
+    <path d="M158 79c-25-6-40 13-40 42-1 24 6 47 17 48 16 1 23-27 27-50" fill="#9b603e"/>
+    <path d="M239 79c25-6 40 13 40 42 1 24-6 47-17 48-16 1-23-27-27-50" fill="#9b603e"/>
+    <path d="M151 103c0-31 22-52 49-52s49 21 49 52v28c0 29-22 49-49 49s-49-20-49-49z" fill="#cc9562"/>
+    <path d="M193 56c3 22-1 38-12 56-8 13-18 16-21 30 6 22 21 35 40 35 20 0 37-13 41-35-3-14-13-17-21-30-11-18-15-34-12-56" fill="#fff9ed" stroke="none"/>
+    <ellipse cx="178" cy="113" rx="4" ry="6" fill="#403d39" stroke="none"/>
+    <ellipse cx="222" cy="113" rx="4" ry="6" fill="#403d39" stroke="none"/>
+    <path d="M191 133q9-5 18 0-1 11-9 11t-9-11z" fill="#403d39"/>
+    <path d="M200 144v9m-11 1q11 12 22 0" fill="none"/>
+    <path d="M163 171q37 16 74 0l-2 12q-35 16-70 0z" fill="#6c8d72"/>
+    <circle cx="200" cy="187" r="7" fill="#e5c574"/>
+  </g>
+</svg>

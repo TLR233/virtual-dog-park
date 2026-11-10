@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-labelledby="title desc">
+  <title id="title">Poodle illustration</title>
+  <desc id="desc">A seated cream Poodle with a curly topknot, rounded ear and ankle puffs, and a green collar.</desc>
+  <ellipse cx="200" cy="272" rx="101" ry="12" fill="#284b3f" opacity=".1"/>
+  <g stroke="#8b8070" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Curved tail and a round tail puff. -->
+    <path d="M244 229c34-1 47-22 39-48" fill="none" stroke="#d5c9b4" stroke-width="12"/>
+    <path d="M244 229c34-1 47-22 39-48" fill="none"/>
+    <path d="M271 154c-9-11-1-25 10-24 9-8 23-2 23 9 12 8 8 25-4 28-3 13-20 16-26 5-11 0-15-12-3-18z" fill="#eee5d5"/>
+    <!-- Curly chest and slender legs. -->
+    <path d="M164 169c-23 22-34 54-25 75 6 14 20 20 37 19h48c19 1 32-11 31-27-2-28-13-49-26-67z" fill="#dfd3bf"/>
+    <path d="M178 203v51h17l1-46m25-5v51h-17l-1-46" fill="#eee5d5"/>
+    <path d="M173 161c-13-10-29 1-26 14-12 6-11 22 1 27-4 14 10 24 22 18 7 11 23 8 27-3 11 10 26 6 29-6 14 3 25-10 19-22 8-12 0-26-13-26-5-14-21-18-30-9-11-11-24-6-29 7z" fill="#f3ebde"/>
+    <path d="M160 244c-13-5-22 6-17 15-6 10 6 17 17 13 10 6 23-1 20-11 4-12-9-22-20-17z" fill="#f3ebde"/>
+    <path d="M226 244c-11-5-24 5-20 17-3 10 10 17 20 11 11 4 23-3 17-13 5-9-4-20-17-15z" fill="#f3ebde"/>
+    <!-- Rounded curly ears frame a long, narrow face. -->
+    <path d="M153 87c-17-5-30 9-27 23-11 8-9 24 3 29-5 14 7 28 20 23 13 7 27-4 24-17 10-10 5-25-6-29 7-13 1-27-14-29z" fill="#e5dac7"/>
+    <path d="M247 87c17-5 30 9 27 23 11 8 9 24-3 29 5 14-7 28-20 23-13 7-27-4-24-17-10-10-5-25 6-29-7-13-1-27 14-29z" fill="#e5dac7"/>
+    <path d="M163 96c0-25 16-40 37-40s37 15 37 40l-8 48c-2 21-14 33-29 33s-27-12-29-33z" fill="#eee5d5"/>
+    <path d="M163 89c-16-4-20-22-7-31-1-15 15-24 27-17 8-15 27-15 35-2 15-5 29 7 24 21 14 11 7 30-7 31-11 11-25 5-29-1-11 10-28 8-33-2z" fill="#f3ebde"/>
+    <path d="m162 66 3-5m27-13 6 2m25 16 6 2m-74 65 4 4m91-15-4 5m-85 64 5 4m54-9-5 5" fill="none" stroke="#c9bda8"/>
+    <ellipse cx="184" cy="112" rx="3.5" ry="5.5" fill="#4c4840" stroke="none"/>
+    <ellipse cx="216" cy="112" rx="3.5" ry="5.5" fill="#4c4840" stroke="none"/>
+    <path d="M192 135q8-5 16 0-1 10-8 10t-8-10z" fill="#4c4840" stroke="#4c4840"/>
+    <path d="M200 145v8m-9 1q9 10 18 0" fill="none"/>
+    <path d="M174 168q26 12 52 0l-2 11q-24 12-48 0z" fill="#6c8d72"/>
+    <circle cx="200" cy="183" r="7" fill="#e5c574"/>
+  </g>
+</svg>
