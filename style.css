@@ -694,3 +694,61 @@ dd {
     height: 210px;
   }
 }
+
+/* Growth and storage build on the existing pet controls. */
+.growth-heading {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#pet-growth {
+  display: block;
+  width: 100%;
+  height: 16px;
+  accent-color: var(--green);
+}
+
+.growth-scale {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 6px 0 24px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.growth-scale span {
+  flex: 1;
+  text-align: center;
+}
+
+.growth-scale span:first-child {
+  text-align: left;
+}
+
+.growth-scale span:last-child {
+  text-align: right;
+}
+
+.pet-button.reset {
+  border-color: #8f6f50;
+  background: transparent;
+  color: #705136;
+}
+
+.pet-button.reset:hover {
+  background: #f4ece1;
+  color: #533b27;
+}
+
+.storage-note {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.pet-message {
+  overflow-wrap: anywhere;
+}

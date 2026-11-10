@@ -151,6 +151,11 @@
             <div><dt>Day</dt><dd id="pet-day">1</dd></div>
             <div><dt>Growth stage</dt><dd id="pet-stage">Puppy</dd></div>
           </dl>
+          <div class="growth-heading">
+            <label for="pet-growth">Growth</label>
+          </div>
+          <progress id="pet-growth" max="3" value="1" aria-describedby="pet-stage">1 / 3</progress>
+          <p class="growth-scale"><span>Puppy</span><span>Young Dog</span><span>Adult Dog</span></p>
           <div class="happiness-heading">
             <label for="pet-happiness">Happiness</label>
             <span id="happiness-value">50 / 100</span>
@@ -159,10 +164,13 @@
           <div class="pet-actions">
             <button id="feed-button" class="pet-button" type="button">Feed</button>
             <button id="play-button" class="pet-button secondary" type="button">Play</button>
+            <button id="next-day-button" class="pet-button secondary" type="button">Next Day</button>
+            <button id="start-over-button" class="pet-button reset" type="button">Start Over</button>
           </div>
         </div>
       </div>
       <p id="pet-message" class="pet-message" aria-live="polite" aria-atomic="true"></p>
+      <p id="storage-message" class="storage-note" aria-live="polite">Progress is saved automatically in this browser. Use the same browser and website address to continue.</p>
     </section>
   </main>
 
