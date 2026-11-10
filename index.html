@@ -106,6 +106,64 @@
       </div>
       <p class="guide-note">Every dog is an individual. These notes are a friendly starting point for getting to know each breed.</p>
     </section>
+
+    <section class="virtual-dog" id="my-virtual-dog" aria-labelledby="virtual-dog-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A new friendship starts here</p>
+          <h2 id="virtual-dog-title">My Virtual Dog</h2>
+        </div>
+        <p>A little friend of your own.</p>
+      </div>
+
+      <form id="adoption-form" class="adoption-form" novalidate>
+        <h3>Meet your new best friend.</h3>
+        <p>Choose a breed and a name, then welcome your dog to the park.</p>
+        <div class="adoption-fields">
+          <div class="form-field">
+            <label for="dog-breed">Dog breed</label>
+            <select id="dog-breed" name="breed">
+              <option value="Beagle">Beagle</option>
+              <option value="Golden Retriever">Golden Retriever</option>
+              <option value="Poodle">Poodle</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="dog-name">Dog name</label>
+            <input id="dog-name" name="dog-name" type="text" maxlength="20" required
+              aria-describedby="name-help name-error" aria-invalid="false" placeholder="For example, Buddy">
+            <p id="name-help" class="form-help">Up to 20 characters. Spaces inside the name are welcome.</p>
+            <p id="name-error" class="form-error" hidden></p>
+          </div>
+        </div>
+        <button class="pet-button" type="submit">Adopt</button>
+      </form>
+
+      <div id="pet-card" class="pet-card" hidden>
+        <div class="pet-portrait">
+          <img id="pet-image" src="assets/beagle.svg" alt="Illustration of a Beagle." width="400" height="300">
+        </div>
+        <div class="pet-details">
+          <p class="eyebrow">Your park companion</p>
+          <h3 id="pet-name" tabindex="-1"></h3>
+          <p id="pet-breed" class="pet-breed"></p>
+          <dl class="pet-stats">
+            <div><dt>Day</dt><dd id="pet-day">1</dd></div>
+            <div><dt>Growth stage</dt><dd id="pet-stage">Puppy</dd></div>
+          </dl>
+          <div class="happiness-heading">
+            <label for="pet-happiness">Happiness</label>
+            <span id="happiness-value">50 / 100</span>
+          </div>
+          <progress id="pet-happiness" max="100" value="50" aria-describedby="happiness-value">50 / 100</progress>
+          <div class="pet-actions">
+            <button id="feed-button" class="pet-button" type="button">Feed</button>
+            <button id="play-button" class="pet-button secondary" type="button">Play</button>
+          </div>
+        </div>
+      </div>
+      <p id="pet-message" class="pet-message" aria-live="polite" aria-atomic="true"></p>
+    </section>
   </main>
 
   <footer class="site-footer">

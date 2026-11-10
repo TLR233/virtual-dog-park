@@ -506,3 +506,191 @@ dd {
     scroll-behavior: auto;
   }
 }
+
+/* Adoption and care use the same colors as the breed guide. */
+.virtual-dog {
+  margin-block: 56px 48px;
+}
+
+.virtual-dog [hidden] {
+  display: none;
+}
+
+.adoption-form,
+.pet-card {
+  padding: 32px;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  background: var(--paper);
+}
+
+.adoption-form h3,
+.pet-details h3 {
+  margin-bottom: 8px;
+  font-size: 26px;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.adoption-form > p,
+.pet-breed {
+  color: var(--muted);
+}
+
+.adoption-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin-block: 24px 10px;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  padding: 10px 12px;
+  border: 1px solid #9ba99c;
+  border-radius: 7px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+}
+
+.form-field input:focus-visible,
+.form-field select:focus-visible {
+  outline: 3px solid #93571e;
+  outline-offset: 3px;
+}
+
+.form-field input[aria-invalid="true"] {
+  border-color: #9a3328;
+}
+
+.form-help,
+.form-error {
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+
+.adoption-form .form-error {
+  color: #9a3328;
+  font-weight: 600;
+}
+
+.pet-button {
+  min-height: 46px;
+  padding: 10px 22px;
+  border: 1px solid var(--green);
+  border-radius: 8px;
+  background: var(--green);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pet-button:hover {
+  background: #244a35;
+}
+
+.pet-button.secondary {
+  background: #eaf0df;
+  color: var(--ink);
+}
+
+.pet-button.secondary:hover {
+  background: #dce6ce;
+}
+
+.pet-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
+  align-items: center;
+  gap: 36px;
+}
+
+.pet-portrait {
+  padding: 20px;
+  border-radius: 12px;
+  background: #eaf0df;
+}
+
+.pet-portrait img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: contain;
+}
+
+.pet-details {
+  min-width: 0;
+}
+
+.pet-details .eyebrow {
+  margin-bottom: 8px;
+  color: var(--muted);
+}
+
+.pet-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 40px;
+  margin-bottom: 24px;
+}
+
+.pet-stats > div {
+  margin-top: 0;
+}
+
+.happiness-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#pet-happiness {
+  display: block;
+  width: 100%;
+  height: 16px;
+  accent-color: var(--green);
+}
+
+.pet-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.pet-message {
+  margin: 16px 0 0;
+  color: var(--green);
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .adoption-form,
+  .pet-card {
+    padding: 24px;
+  }
+
+  .adoption-fields,
+  .pet-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .pet-portrait img {
+    height: 210px;
+  }
+}

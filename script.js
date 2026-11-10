@@ -17,3 +17,100 @@ function showNextTip() {
 }
 
 tipButton.addEventListener("click", showNextTip);
+
+// One object holds the adopted dog's information. No dog is adopted at first.
+let dog = null;
+const breedImages = {
+  "Beagle": "assets/beagle.svg",
+  "Golden Retriever": "assets/golden-retriever.svg",
+  "Poodle": "assets/poodle.svg"
+};
+
+const adoptionForm = document.querySelector("#adoption-form");
+const breedSelect = document.querySelector("#dog-breed");
+const nameInput = document.querySelector("#dog-name");
+const nameError = document.querySelector("#name-error");
+const petCard = document.querySelector("#pet-card");
+const petName = document.querySelector("#pet-name");
+const petMessage = document.querySelector("#pet-message");
+const feedButton = document.querySelector("#feed-button");
+const playButton = document.querySelector("#play-button");
+
+function showNameError(message) {
+  nameError.textContent = message;
+  nameError.hidden = false;
+  nameInput.setAttribute("aria-invalid", "true");
+  nameInput.focus();
+}
+
+function clearNameError() {
+  nameError.textContent = "";
+  nameError.hidden = true;
+  nameInput.setAttribute("aria-invalid", "false");
+}
+
+// Check the name, then create one dog with the required starting values.
+function adoptDog(event) {
+  event.preventDefault();
+  if (dog !== null) return;
+
+  const name = nameInput.value.trim();
+  if (name.length === 0) {
+    showNameError("Please enter a dog name. A name cannot contain only spaces.");
+    return;
+  }
+  if (name.length > 20) {
+    showNameError("Please use a name with 20 characters or fewer.");
+    return;
+  }
+
+  clearNameError();
+  nameInput.value = name;
+  dog = {
+    name: name,
+    breed: breedSelect.value,
+    day: 1,
+    stage: "Puppy",
+    happiness: 50
+  };
+
+  adoptionForm.hidden = true;
+  petCard.hidden = false;
+  renderDog();
+  petMessage.textContent = "Welcome to the park, " + dog.name + "!";
+  petName.focus();
+}
+
+// Copy the dog's current information onto the page, safely as text.
+function renderDog() {
+  petName.textContent = dog.name;
+  document.querySelector("#pet-breed").textContent = dog.breed;
+  document.querySelector("#pet-day").textContent = dog.day;
+  document.querySelector("#pet-stage").textContent = dog.stage;
+  document.querySelector("#happiness-value").textContent = dog.happiness + " / 100";
+
+  const happinessBar = document.querySelector("#pet-happiness");
+  happinessBar.value = dog.happiness;
+  happinessBar.textContent = dog.happiness + " / 100";
+
+  const petImage = document.querySelector("#pet-image");
+  petImage.src = breedImages[dog.breed];
+  petImage.alt = "Illustration of a " + dog.breed + ".";
+}
+
+// Feed and Play share the same rule: add 10, stopping at 100.
+function increaseHappiness(action) {
+  if (dog === null) return;
+  dog.happiness = Math.min(100, dog.happiness + 10);
+  renderDog();
+  petMessage.textContent = action + " time with " + dog.name + ". Happiness: " + dog.happiness + " / 100.";
+}
+
+adoptionForm.addEventListener("submit", adoptDog);
+nameInput.addEventListener("input", clearNameError);
+feedButton.addEventListener("click", function () {
+  increaseHappiness("Feeding");
+});
+playButton.addEventListener("click", function () {
+  increaseHappiness("Play");
+});
